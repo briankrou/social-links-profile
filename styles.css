@@ -1,0 +1,112 @@
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-green-700: hsl(0, 0%, 20%);
+  --color-green-800: hsl(0, 0%, 12%);
+  --color-green-900: hsl(0, 0%, 8%);
+}
+@font-face {
+  font-family: "paragraph"; /* El nombre que usarás en tu CSS */
+  src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype"); /* Ruta al archivo TTF */
+  font-weight: normal; /* Ajusta esto según el peso de la fuente */
+  font-style: normal; /* Ajusta esto según el estilo de la fuente (normal, italic, etc.) */
+}
+
+*,
+**,
+::before,
+::after {
+  margin: 0;
+
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  font-family: "paragraph"; /* Usa el nombre definido en @font-face */
+  margin: 0;
+  
+}
+ul{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+}
+
+main {
+  margin: 0;
+  background: var(--color-green-900);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  text-align: center;
+  background: var(--color-green-800);
+  padding: 20px 30px;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-image {
+  background-image: url("./assets//images/avatar-jessica.jpeg");
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  align-self: center;
+}
+.social-media {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.social-media li {
+    background-color: var(--color-green-700);
+    padding: 5px;
+
+}
+
+.social-media a {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: aliceblue;
+    padding: 10px;
+      background: var(--color-green-700);
+}
+
+.social-media li:hover {
+
+  color: var(--color-green-900);
+}
+.social-media a:hover {
+    background: var(--color-green);
+    color: black;
+}
+.card-title {
+  font-size: 16px;
+}
+.card-from {
+  font-size: 14px;
+  color: var(--color-green);
+}
+.card-job {
+  font-size: 14px;
+}
